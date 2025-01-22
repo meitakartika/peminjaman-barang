@@ -35,7 +35,7 @@ const Navbar = () => {
         <div style={styles.userProfile}>
           <span style={styles.userName}>{getRoleText()}</span>
           <img 
-            src="https://image.freepik.com/free-vector/businessman-profile-cartoon_18591-58479.jpg"
+            src="/avatar22.png"
             alt="User Avatar" 
             style={styles.avatar}
           />

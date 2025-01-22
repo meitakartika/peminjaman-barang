@@ -48,7 +48,7 @@ const Register = () => {
             <form onSubmit={saveUser}>
               {msg && <p style={styles.errorMessage}>{msg}</p>}
               <div className="mb-4 text-center">
-                <h4 className="fw-bold" style={{ fontSize: '2rem', color: '#495db8' }}>Register</h4>
+                <h4 className="fw-bold" style={{ fontSize: '2rem', color: '#003366' }}>Register</h4>
               </div>
               {/* Name input */}
               <div data-mdb-input-init className="form-outline mb-4">

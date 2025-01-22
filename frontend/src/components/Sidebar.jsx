@@ -14,12 +14,6 @@ const Sidebar = () => {
     navigate("/");
   }
 
-  const [isBarangOpen, setBarangOpen] = useState(false);
-
-  const toggleBarangDropdown = () => {
-    setBarangOpen(!isBarangOpen);
-  };
-
   return (
     <div id="sidebar" style={styles.sidebar}>
       <div className="sidebar-wrapper active" style={styles.sidebarWrapper}>
@@ -28,7 +22,7 @@ const Sidebar = () => {
             <div className="logo">
               <a href="#">
                 <img
-                  src="https://static.vecteezy.com/system/resources/previews/020/983/339/original/dolly-flatbed-icon-design-free-vector.jpg"
+                  src="/logoBorrowEase.png"
                   alt="Logo"
                   style={styles.logo}
                 />
@@ -60,21 +54,11 @@ const Sidebar = () => {
             )}
             {user && user.role === "admin" && (
               <div>
-                <li className={`sidebar-item has-sub ${isBarangOpen ? 'open' : ''}`} style={styles.sidebarItem}>
-                  <div className="sidebar-link" onClick={toggleBarangDropdown} style={styles.sidebarLink}>
+                <li className="sidebar-item" style={styles.sidebarItem}>
+                  <NavLink to="/barang" className="sidebar-link" style={styles.sidebarLink}>
                     <i className="fa-solid fa-briefcase" />
                     <span style={styles.linkText}>Data Barang</span>
-                    <i className={`fa-solid fa-chevron-down ${isBarangOpen ? 'rotate' : ''}`} style={styles.chevronIcon}></i>
-                  </div>
-                  {isBarangOpen && (
-                    <ul className="submenu" style={styles.submenu}>
-                      <li className="submenu-item" style={styles.submenuItem}>
-                        <NavLink to="/barang" className="submenu-link" style={styles.submenuLink}>
-                          Komputer
-                        </NavLink>
-                      </li>
-                    </ul>
-                  )}
+                  </NavLink>
                 </li>
               </div>
             )}
@@ -164,7 +148,7 @@ const styles = {
     marginLeft: '10px',
     fontSize: '16px',
     fontWeight: '600',
-    color: '#243561',
+    color: '#003366',
   },
   menu: {
     listStyle: 'none',

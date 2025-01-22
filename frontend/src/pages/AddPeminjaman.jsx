@@ -95,7 +95,7 @@ function AddPeminjaman() {
             <Sidebar />
             <div id="main" className="layout-navbar navbar-fixed" style={styles.mainContent}>
                 <div id="main-content">
-                    <div className="page-heading" style={{ paddingTop: '60px' }}>
+                    <div className="page-heading" style={{ paddingTop: '40px' }}>
                         <div className="page-title" style={{ marginBottom: '20px', textAlign: 'center' }}>
                             <div className="row">
                                 <div className="col-12">

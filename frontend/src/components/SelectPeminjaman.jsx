@@ -38,15 +38,6 @@ function SelectPeminjaman({ isOpen, onClose, onSelectItem }) {
                 <div className="modal-content">
                     <div className="modal-header">
                         <h5 className="modal-title">Data Barang</h5>
-                        <div className="dropdown me-2">
-                            <button className="btn btn-link p-0 text-decoration-none" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"
-                                style={{fontSize: '14px', borderBottom: '0 px',color: 'black', marginLeft: '10px'}}>
-                                Komputer
-                            </button>
-                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a className="dropdown-item" href="#">Komputer</a></li>
-                            </ul>
-                        </div>
                         <button type="button" className="btn-close" onClick={onClose}></button>
                     </div>
                     <div className="modal-body">

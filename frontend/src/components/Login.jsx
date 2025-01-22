@@ -39,7 +39,7 @@ const Login = () => {
             <form onSubmit={Auth}>
               {isError && <p style={styles.errorMessage}>{message}</p>}
               <div className="mb-4 text-center">
-                <h4 className="fw-bold" style={{ fontSize: '2rem', color: '#495db8' }}>Login</h4>
+                <h4 className="fw-bold" style={{ fontSize: '2rem', color: '#003366' }}>Login</h4>
               </div>
               {/* Email input */}
               <div data-mdb-input-init className="form-outline mb-4">
